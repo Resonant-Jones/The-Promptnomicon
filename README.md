@@ -101,6 +101,23 @@ Check whether:
 
 ---
 
+## Promptnomicon Steward
+
+The Promptnomicon Steward turns this methodology into a repo-local development-process agent.
+
+It is not primarily a coding agent. It is a process companion that helps a team see what is implemented, what is only planned, what has proof, what is drifting, and what the smallest coherent next task should be.
+
+Start here:
+
+- [`docs/promptnomicon-steward.md`](docs/promptnomicon-steward.md)
+- [`agents/promptnomicon-steward.md`](agents/promptnomicon-steward.md)
+- [`templates/promptnomicon-steward-session.md`](templates/promptnomicon-steward-session.md)
+- [`templates/project-reality-footer.md`](templates/project-reality-footer.md)
+
+Use it when the repo feels scattered, a roadmap has become too large, one person is becoming the bottleneck, or the team needs a current-state read before touching code.
+
+---
+
 ## Quickstart
 
 1. Read [`docs/00-start-here.md`](docs/00-start-here.md)
@@ -114,6 +131,8 @@ Check whether:
 5. Record architectural decisions with [`adr/template.md`](adr/template.md)
 
 6. Run a drift review using [`templates/documentation-drift-review.md`](templates/documentation-drift-review.md)
+
+7. For repo-local process guidance, install the [`Promptnomicon Steward`](docs/promptnomicon-steward.md)
 
 ---
 
@@ -129,6 +148,8 @@ Check whether:
 | [Documentation Drift Review](templates/documentation-drift-review.md) | Finding stale docs after changes |
 | [Research-to-Spec Packet](templates/research-to-spec-packet.md) | Converting research into implementable specifications |
 | [Campaign/Spec Directory](templates/campaign-spec-directory.md) | Coordinating large multi-step project efforts |
+| [Promptnomicon Steward Session](templates/promptnomicon-steward-session.md) | Starting a repo-local process-steward session |
+| [Project Reality Footer](templates/project-reality-footer.md) | Adding current-state breadcrumbs to dev logs, changelogs, and receipts |
 
 ---
 
