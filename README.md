@@ -2,12 +2,15 @@
 
 ## Vibe Coding Secrets from the Crypt 🕯️💻📜
 
-*A field manual for surviving AI-assisted software development without summoning architectural horrors from beneath the repo floorboards.*
+The Prompt-nomicon is a practical field manual for developers who want to summon the *essence* of a senior engineer into their AI-assisted stack without accidentally opening a portal beneath `src/`.
 
-The Prompt-nomicon is a practical guide to working with coding agents, AI assistants, and prompt-driven development systems in ways that remain structured, testable, and sane. It focuses on the operational realities of AI-assisted engineering: task design, repo scaffolding, specification discipline, validation workflows, context preservation, and keeping your automation stack from free-climbing the cathedral walls at 2:13 AM.
+It is about building coding-agent workflows that act less like chaotic autocomplete familiars and more like brutally useful informants: agents that notice when your plan is mushy, when your repo is drifting, when your “quick fix” has quietly become architectural vandalism, and when your validation story is held together with vibes and a decorative README badge.
 
-This is not a collection of “one weird prompt tricks.”  
-It is a methodology for building systems where evidence matters, decisions remain traceable, and implementation claims can survive contact with reality.
+This guide focuses on the operational reality of AI-assisted engineering: task design, repo scaffolding, specification discipline, automation setup, validation workflows, context preservation, and keeping your development process organized enough that future-you does not need a lantern, a priest, and three hours of `git blame` to understand what happened.
+
+This is not a collection of “one weird prompt tricks.”
+
+It is a methodology for building systems where your AI tools can help plan, inspect, scaffold, automate, document, and critique work while staying bounded by evidence, tests, receipts, and architectural intent.
 
 Yes, there are rituals.  
 But the rituals mostly involve receipts, architecture notes, validation checklists, and refusing to let a coding agent rewrite your auth layer because it “felt cleaner.”
