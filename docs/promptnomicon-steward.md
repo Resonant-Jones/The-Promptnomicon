@@ -35,6 +35,7 @@ Copy these files into the target repository:
 ```text
 agents/promptnomicon-steward.md
 templates/promptnomicon-steward-session.md
+templates/promptnomicon-steward-invocation.md
 templates/project-reality-footer.md
 ```
 
@@ -44,17 +45,68 @@ Recommended target layout:
 .promptnomicon/
   promptnomicon-steward.md
   promptnomicon-steward-session.md
+  promptnomicon-steward-invocation.md
   project-reality-footer.md
 ```
 
-Then open the target repo in a repo-aware assistant and start with the session template.
+Then open the target repo in a repo-aware assistant.
 
-## First Conversation
+## Invoke the Steward
 
-Ask:
+Recommended first invocation:
 
 ```text
-Use .promptnomicon/promptnomicon-steward-session.md as your operating instructions for this session. Do not modify files yet. Give me the current project reality state and the smallest coherent next task.
+Invoke the Promptnomicon Steward.
+
+Read .promptnomicon/promptnomicon-steward.md,
+.promptnomicon/promptnomicon-steward-session.md,
+and .promptnomicon/promptnomicon-steward-invocation.md.
+
+Begin the project interview.
+Do not modify implementation files.
+Do not recommend a coding task until the interview distinguishes current reality from aspiration.
+After the interview, create or update docs/promptnomicon/project-reality.md only with my approval.
+```
+
+A compatible short form is:
+
+```text
+Invoke the Promptnomicon Steward and begin the project interview.
+```
+
+## What Happens on First Invocation
+
+The Steward begins in read-only mode and asks one focused question at a time. The interview establishes:
+
+1. the project's ultimate goal
+2. who it is for and what problem it solves
+3. what is already implemented or directly observed
+4. what remains planned, experimental, or aspirational
+5. the next meaningful milestone
+6. protected boundaries that require explicit approval
+7. the proof surfaces that count as completion
+8. operating constraints such as platform, budget, compatibility, privacy, or deployment limits
+
+The interview contract lives in `templates/promptnomicon-steward-invocation.md`.
+
+## Project Reality Artifact
+
+After the interview, the Steward proposes a durable project-reality record at:
+
+```text
+docs/promptnomicon/project-reality.md
+```
+
+The artifact separates implemented behavior, test evidence, runtime proof, plans, constraints, protected boundaries, uncertainty, and the smallest coherent next task.
+
+The Steward must request explicit approval before writing or replacing this file.
+
+## Returning Sessions
+
+When `docs/promptnomicon/project-reality.md` already exists, use the normal session template:
+
+```text
+Use .promptnomicon/promptnomicon-steward-session.md as your operating instructions for this session. Do not modify files yet. Compare the repository against the existing project-reality record, report any drift, and give me the smallest coherent next task.
 ```
 
 ## Best Use Cases
